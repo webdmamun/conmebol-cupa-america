@@ -1,0 +1,436 @@
+/* ---------------------------------------
+            Fonts
+-------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+/* ---------------------------------------
+            Common Styles
+-------------------------------------------*/
+*{margin: 0; padding: 0;}
+body{font-family: 'Poppins', sans-serif; transition: all 0.5s ease; -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease;}
+body, html{height: 100%;}
+img{max-width: 100%;}
+a{text-decoration: none;}
+a:hover{text-decoration: none;}
+h1, h2, h3, h4, h5, h6{font-weight: normal; margin-top: 10px; margin-bottom: 10px;}
+p{line-height: 150%; margin-bottom: 2em;}
+.container_full{width: 100%; height: auto;}
+.container{width: 80%; margin: 0 auto; display: block;}
+.fix{overflow: hidden;}
+.floatleft{float: left;}
+.floatright{float: right;}
+.displayflex{display: flex;}
+
+/* ---------------------------------------
+            Main Style
+-------------------------------------------*/
+/* ---------------------------------------
+            Nav and Header Style
+-------------------------------------------*/
+.header-bg{
+    background-color: #2D25A0;
+}
+#header .menu ul{
+    list-style: none;
+    margin-top: 25px;
+}
+#header .menu ul li{
+    padding: 15px;    
+}
+#header .menu ul li a{
+    font-size: 16px;
+    color: #FFFFFF;
+}
+#header .login-button{
+    margin-top: 40px;
+}
+#header .login-button a{
+    color: #FFFFFF;
+    background: #E02C6D;
+    padding: 10px 24px;
+    width: 123px;
+    text-align: center;
+}
+#header .login-button .fas{
+    color: #FFFFFF;
+    margin-right: 5px;
+}
+#header #header-body{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 86px;
+}
+#header .header-body-title .heading{
+    font-weight: bold;
+    font-size: 64px;
+    color: #FFFFFF;
+}
+#header .header-body-title a{
+    background: #E02C6D;
+    padding: 10px 24px;
+    width: 123px;
+    text-align: center;
+    margin-top: 40px;
+    color: #FFFFFF;
+}
+#header .header-body-img{
+    width: 500px;
+}
+/* Header buttons hover effect */
+
+#header .login-button a:hover{
+    transition: all 0.5s ease;
+    background: #793C3C;
+    box-shadow: 1px 0px 5px 3px #3e2e2e;
+}
+#header-body .header-body-title a:hover{
+    transition: all 0.5s ease;
+    background: #793C3C;
+    box-shadow: 1px 0px 5px 3px #3e2e2e;
+}
+
+/* --------------------------------------------
+                Content Area Style
+---------------------------------------------*/
+.bolgs-bg{
+    background-color: #F3F1FF;
+}
+.blog-area{
+
+    margin-top: 70px;
+}
+#blogs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+#blogs .blog{
+    padding: 15px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    margin-bottom: 27px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+#blogs .blog img{
+    width: 300px;
+    height: 256px;
+}
+#blogs .blog h3{
+    font-weight: bold;
+    font-size: 28px;
+    color: #18191F;
+}
+#blogs .blog p{
+    font-size: 16px;
+    color: #6C6C6C;
+    font-weight: normal;
+}
+/* ----------------------------------------------
+                Image Gallery Area Style
+--------------------------------------------------*/
+#image-gallary{
+    margin-top: 50px;
+}
+#image-gallary img {
+    width: 100%; /* need to overwrite inline dimensions */
+    height: auto;
+  }
+#image-gallary h2 {
+    margin-bottom: .5em;
+    color: #173562;
+    font-size: 28px;
+    font-weight: bold;
+  }
+#image-gallary .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1em;
+  }
+
+  /* hover styles */
+  .single-image {
+    position: relative;
+  }
+
+  .root-image {
+    line-height: 0;
+    overflow: hidden;
+  }
+  
+  .root-image img {
+    filter: blur(0px);
+    transition: filter 0.3s ease-in;
+    transform: scale(1.1);
+  }
+  
+  .image-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .5s;
+    background: rgba(90,0,10,0.4);
+    color: white;
+    
+    /* position the text in t’ middle*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .single-image:hover .image-title {
+    opacity: 1;
+  }
+  
+  .single-image:hover .root-image img {
+    filter: blur(2px);
+  }
+
+/* ------------------------------------------------
+                Highlights Area Style
+---------------------------------------------------*/
+#highlights-body{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 160px;
+    margin-bottom: 40px;
+}
+#highlights-body .highlights-title{
+    width: 469px;
+}
+#highlights-body .highlights-title h1{
+    font-weight: bold;
+    font-size: 48px;
+    color: #0A0826;
+}
+#highlights-body .highlights-title p{
+    font-size: 16px;
+    color: #6C6C6C;
+    font-weight: 400;
+}
+#highlights-body .highlights-title a{
+    background: #E02C6D;
+    padding: 10px 24px;
+    width: 123px;
+    text-align: center;
+    margin-top: 40px;
+    color: #FFFFFF;
+}
+#highlights-body .highlights-img{
+    width: 567px;
+}
+/* Highlight button hover */
+#highlights-body .highlights-title a:hover{
+    transition: all 0.5s ease;
+    background: #793C3C;
+    box-shadow: 1px 0px 5px 3px #3e2e2e;
+}
+
+
+/* ---------------------------------------------
+                Sponsors Area Style
+------------------------------------------------*/
+#sponsors-area{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 40px;
+        margin-bottom: 60px;
+}
+#sponsors-area h2{
+    color: #173562;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 15px;
+}
+#sponsors-area .sponsors-list img{
+    margin: 0px 10px;
+}
+/* Sponsors Area hover effect */
+#sponsors-area .sponsors-list img:hover{
+    transform: rotate(1turn);
+    transition: all 2s ease;
+}
+
+/* -------------------------------------------
+                Footer Area Style
+---------------------------------------------*/
+.footer-bg{
+    background-color: #FFFFFF;
+}
+#footer-area{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+#footer-area .footer-logo{
+    width: 483.87px;
+}
+#footer-area .social-icon .fab{
+    font-size: 32px;
+    background-color: #E7E7E8;
+    padding: 10px 11px;
+    border-radius: 50%;
+    margin: 20px 10px;
+    color: #969BAB;
+}
+#footer-area .copyright-area{
+    font-size: 18px;
+}
+
+/* Footer Social Icon hover effect */
+
+#footer-area .social-icon .fa-instagram:hover{
+    background-color: #F00075;
+    color: #ffffff;
+    transition: all 1s ease;
+}
+#footer-area .social-icon .fa-dribbble:hover{
+    background-color: #ea4c89;
+    color: #ffffff;
+    transition: all 1s ease;
+}
+#footer-area .social-icon .fa-twitter:hover{
+    background-color: #46c1f6;
+    color: #ffffff;
+    transition: all 1s ease;
+}
+#footer-area .social-icon .fa-youtube:hover{
+    background-color: #de463b;
+    color: #ffffff;
+    transition: all 1s ease;
+}
+
+/* ------------------------------------------------
+                Media Query for Responsiveness 
+---------------------------------------------------*/
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+    #header .menu{
+        display: none;
+    }
+    #header #header-body {
+        display: flex;
+        flex-direction: column;
+    }
+    #header .header-body-title .heading {
+        font-weight: bold;
+        font-size: 36px;
+        color: #FFFFFF;
+        margin-bottom: 30px;
+    }
+    #header .header-body-img {
+        width: 255px;
+        margin-top: 50px;
+    }
+    #blogs {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #blogs .blog {
+        margin: 0 auto;
+        margin-bottom: 27px;
+    }
+    #blogs .blog img {
+        width: 300px;
+        height: 256px;
+    }
+    #highlights-body {
+        display: flex;
+        margin-top: 60px;
+        flex-direction: column;
+    }
+    #highlights-body .highlights-title {
+        width: 100%;
+    }
+    #highlights-body .highlights-title h1 {
+        font-size: 30px;
+    }
+    #highlights-body .highlights-img {
+        width: 100%;
+        margin-top: 30px;
+    }
+    #sponsors-area h2 {
+        color: #173562;
+        font-size: 26px;
+        font-weight: bold;
+        padding: 15px;
+        text-align: center;
+    }
+    #footer-area .footer-logo {
+        width: 100%;
+    }
+    #footer-area .social-icon .fab {
+        font-size: 19px;
+        background-color: #E7E7E8;
+        padding: 10px 11px;
+        border-radius: 50%;
+        margin: 15px 5px;
+        color: #969BAB;
+    }
+}
+
+/* Portrait and Landscape ----------- */
+@media only screen
+  and (min-device-width: 768px) 
+  and (max-device-width: 1280px) {
+    #header .menu ul li {
+        padding: 10px;
+    }
+    #header .header-body-title .heading {
+        font-weight: bold;
+        font-size: 50px;
+        color: #FFFFFF;
+    }
+    #header .header-body-img {
+        width: 500px;
+        margin-left: 70px;
+        margin-top: 70px;
+    }
+    #header .menu ul li a {
+        font-size: 14px;
+        color: #FFFFFF;
+    }
+    #header .login-button {
+        margin-top: 40px;
+        margin-left: 0;
+    }
+    #blogs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #highlights-body {
+        display: flex;
+        margin-top: 100px;
+        margin-bottom: 40px;
+        flex-direction: column;
+    }
+    #highlights-body .highlights-title {
+        width: 100%;
+    }
+    #highlights-body .highlights-title h1 {
+        font-weight: bold;
+        font-size: 40px;
+        color: #0A0826;
+    }
+    #highlights-body .highlights-img {
+        width: 100%;
+        margin-top: 40px;
+    }
+    #sponsors-area{
+        margin-top: 0;
+    }
+
+}
